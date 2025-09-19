@@ -7,6 +7,12 @@
         <link rel="stylesheet" href="./firststyle.css" />
     </head>
     <body>
+        <div id="groupName">
+            <div id="groupName-ct">
+                <button id="CloseCt">&times;</button>
+                <h1>第五組</h1>
+            </div>
+        </div>
         <header id="nb">
                 <div id="nav">
                     <div id="kk">Kedai Kopi</div>
@@ -24,11 +30,31 @@
         </header>
         <section id="ct">
             <div id="txt">
-                <h1></h1>
+                <span id="name">製作單位</span>
             </div>
             <div id="txt-img">
                 <img src="" alt=""> <!-- Put image source file -->
             </div>
         </section>
+        <script>
+            const wholeg = document.getElementById("groupName");
+            const groups = document.getElementById("name");
+            const closed = document.getElementById("CloseCt");
+            groups.addEventListener("mouseup", (e) => {
+                if(e.button == 0) {
+                    document.getElementById("groupName").style.display = "flex";
+                }
+            });
+            closed.addEventListener("mouseup", (e) => {
+                if(e.button == 0) {
+                    document.getElementById("groupName").style.display = "none";
+                }
+            })
+            wholeg.addEventListener("mouseup", (e) => {
+                if(e.button == 0) {
+                    document.getElementById("groupName").style.display = "none";
+                }
+            })
+        </script>
     </body>
 </html>
