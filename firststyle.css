@@ -27,7 +27,7 @@ body {
     font-family: GeorGia, "Times New Roman", "Arial";
 }
 #kk {
-    transform: translate(17%, -70%);
+    transform: translate(5%, -70%);
 }
 #bf {
     transform: translate(45%, -70%);
@@ -41,7 +41,7 @@ body {
     height: auto;
     width: auto;
     max-width: 122px;
-    transform: translate(80%, 0%);
+    transform: translate(65%, 0%);
 }
 /* Navigation Reference */
 #rf {
@@ -74,4 +74,9 @@ body {
     align-items: center;
     padding: 60px 0px;
     background: #f2f2f2;
+}
+.name {
+    display: flex;
+    transform: translate(430%);
+    font-size: 3em;
 }
