@@ -144,7 +144,7 @@ body {
     border: 3px groove #000000;
     outline-width: 3px;
     outline-style: solid;
-    outline-color: #ffff00;
+    outline-color: #ff0000;
     box-shadow: 3px 3px 5px #00ffff;
 }
 #name:hover { color: #9b2d20; }
