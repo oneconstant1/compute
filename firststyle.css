@@ -4,6 +4,58 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+/* Group */
+#groupName {
+    display: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;  
+}
+#groupName-ct {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 80%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+#CloseCt, #CloseCt:hover {
+    position: absolute;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    background: #222222;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-radius: 50px;
+}
+#CloseCt {
+    color: #ffffff;
+}
+#CloseCt:active {
+    color: #9f00be;
+}
+#CloseCt:hover {
+    transform: scale(1.2);
+    color: #9b2d20;
+}
 /* Navigation bar */
 #nb {
     display: inline-block;
@@ -27,7 +79,7 @@ body {
     font-family: GeorGia, "Times New Roman", "Arial";
 }
 #kk {
-    transform: translate(5%, -70%);
+    transform: translate(5.5%, -70%);
 }
 #bf {
     transform: translate(45%, -70%);
@@ -63,8 +115,7 @@ body {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 #rf a:hover {
-    transform: translate(-10%, 0%);
-    transform: scale(1.2);
+    transform: translate(-10%, 0%) scale(1.2);
     color: #9b2d20;
 }
 /* Content */
@@ -72,11 +123,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 0px;
+    padding: 20px 0px;
     background: #f2f2f2;
 }
-.name {
+#name {
     display: flex;
-    transform: translate(430%);
-    font-size: 3em;
+    transform: translate(470%, 0%);
+    font-size: 2em;
+    border: 3px groove #000000;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: #ffff00;
+    box-shadow: 3px 3px 5px #00ffff;
 }
+#name:hover, #name:active {
+    display: flex;
+    cursor: pointer;
+    transform: translateX(470%) scale(1.1);
+    font-size: 2em;
+    border: 3px groove #000000;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: #ffff00;
+    box-shadow: 3px 3px 5px #00ffff;
+}
+#name:hover { color: #9b2d20; }
+#name:active { user-select: none; -webkit-user-select: none; color: #9f00be; }
